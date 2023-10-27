@@ -34,7 +34,12 @@ def buyLotsOfFruit(orderList):
 
     Returns cost of order
     """
-    totalCost = 12.25
+    totalCost = 0
+   for fruit, pounds in orderList:
+    	if not fruitPrices.has_key(fruit):
+    		print 'ERROR: invalid fruit.'
+    		return None		
+    	totalCost += fruitPrices[fruit] * pounds
     "*** YOUR CODE HERE ***"
     return totalCost
 
