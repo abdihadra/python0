@@ -30,7 +30,9 @@ def shopSmart(orderList, fruitShops):
         fruitShops: List of FruitShops
     """
     "*** YOUR CODE HERE ***"
-    return None
+  welcome1=Welcome to shop1 fruit shop
+welcome2=Welcome to shop2 fruit shop
+    return welcome1 + welcome2
 
 
 if __name__ == '__main__':
